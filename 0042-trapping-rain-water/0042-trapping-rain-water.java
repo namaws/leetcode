@@ -7,6 +7,8 @@ class Solution {
         int maxRight = 0;
         
         while(left < right) {
+            int currLeft = height[left];
+            int currRight = height[right];
             if(height[left] < height[right]) {
                 if(maxLeft <= height[left]) {
                     maxLeft = height[left];
