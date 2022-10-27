@@ -1,27 +1,31 @@
 class Solution {
-    public int[][] merge(int[][] intervals) {
-        int[] start = new int[intervals.length];
-        int[] end = new int[intervals.length];
-        
-        for(int i=0; i<intervals.length; i++) {
-            start[i] = intervals[i][0];
-            end[i] = intervals[i][1];
-        }
-        Arrays.sort(start);
-        Arrays.sort(end);
-        
-        List<int[]> list = new ArrayList<>();
-        
-        // i start idx
-        // j end idx
-        for(int i=0, j=0; j<intervals.length; j++) {
-            //last intervals or a new interval started
-            if( j == intervals.length-1 || start[j+1] > end[j] ) {
-                list.add(new int[] {start[i], end[j]});
-                i = j+1;
-            }
-        }
-        
-        return list.toArray(new int[list.size()][]);
-    }
+	public int[][] merge(int[][] intervals) {
+		if (intervals.length <= 1)
+			return intervals;
+
+		// Sort by ascending starting point
+		Arrays.sort(intervals, (i1, i2) -> Integer.compare(i1[0], i2[0]));
+
+		List<int[]> result = new ArrayList<>();
+        //take the first interval
+		int[] newInterval = intervals[0];
+        //put into the list first
+		result.add(newInterval);
+		for (int[] interval : intervals) {
+            //overlapping interval
+			if (interval[0] <= newInterval[1]) 
+                // not sure what kind of overlapping
+                /*
+                ------         ------------
+                  -------  or      ---
+                */
+				newInterval[1] = Math.max(newInterval[1], interval[1]);
+			else {                             // Disjoint intervals, add the new interval to the list
+				newInterval = interval;
+				result.add(newInterval);
+			}
+		}
+
+		return result.toArray(new int[result.size()][]);
+	}
 }
