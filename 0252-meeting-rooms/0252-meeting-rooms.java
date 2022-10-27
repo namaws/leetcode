@@ -1,15 +1,19 @@
 class Solution {
     public boolean canAttendMeetings(int[][] intervals) {
-        int currMaxEnd = 0;
-        Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
-        for(int i=0; i<intervals.length; i++) {
+        if(intervals == null || intervals.length == 0) return true;
+        Arrays.sort(intervals, Comparator.comparingInt(a->a[0]));
+        int currMaxEnd = intervals[0][1];
+        for(int i=1; i<intervals.length; i++) {
             int start = intervals[i][0];
             int end = intervals[i][1];
-            if(start < currMaxEnd)
+            
+            //overlap
+            if(start < currMaxEnd) {
                 return false;
-            else {
-                currMaxEnd = Math.max(currMaxEnd, end);
             }
+            
+            //renew currMaxEnd
+            currMaxEnd = Math.max(currMaxEnd, end);
         }
         return true;
     }
