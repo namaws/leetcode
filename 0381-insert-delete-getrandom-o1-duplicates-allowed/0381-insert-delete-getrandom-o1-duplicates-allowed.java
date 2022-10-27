@@ -26,8 +26,10 @@ class RandomizedCollection {
             return false;
         }
         else {
+            //hashset no get();
+            //set.iterator() => go through set
+            //.next() get the first one
             int idx = map.get(val).iterator().next();
-            System.out.println(idx);
             map.get(val).remove(idx);
             if(idx < list.size()-1) {
                 int last = list.get(list.size()-1);
