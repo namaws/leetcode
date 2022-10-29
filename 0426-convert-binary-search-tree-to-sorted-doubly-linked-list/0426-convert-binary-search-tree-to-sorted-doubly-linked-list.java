@@ -20,37 +20,32 @@ class Node {
 */
 
 class Solution {
-
+    Node first = null;
+    Node last = null;
     public Node treeToDoublyList(Node root) {
-        if(root == null) return root;
-        
-        Node first = null;
-        Node last = null;
-        
-        Deque<Node> stack = new ArrayDeque<>();
-        //if break while loop => every node is linked except for the last one
-        while(root != null || !stack.isEmpty()) {
-            while(root != null) {
-                stack.push(root);
-                root = root.left;
-            }
-            
-            root = stack.pop();
-            if(first == null) {
-                first = root;
-            }
-            
-            if(last != null) {
-                last.right = root;
-                root.left = last;
-            }
-            last = root;
-            root = root.right;
-        }
-        
-        first.left = last;
+        if(root == null) return null;
+        helper(root);
         last.right = first;
+        first.left = last;
         return first;
         
+    }
+    
+    public void helper(Node node) {
+        if(node != null) {
+            //left
+            helper(node.left);
+            if(last != null) {
+                last.right = node;
+                node.left = last;
+            }
+            
+            else {
+                //keep the left most node
+                first = node;
+            }
+            last = node;
+            helper(node.right);
+        }  
     }
 }
