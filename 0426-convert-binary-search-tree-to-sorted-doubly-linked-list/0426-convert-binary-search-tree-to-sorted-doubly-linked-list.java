@@ -20,32 +20,25 @@ class Node {
 */
 
 class Solution {
-    Node first = null;
-    Node last = null;
+    Node prev = null;
     public Node treeToDoublyList(Node root) {
         if(root == null) return null;
+        Node dummy = new Node(0);
+        prev = dummy;
         helper(root);
-        last.right = first;
-        first.left = last;
-        return first;
+        prev.right = dummy.right;
+        dummy.right.left = prev;
+        return dummy.right;
         
     }
     
     public void helper(Node node) {
-        if(node != null) {
-            //left
-            helper(node.left);
-            if(last != null) {
-                last.right = node;
-                node.left = last;
-            }
-            
-            else {
-                //keep the left most node
-                first = node;
-            }
-            last = node;
-            helper(node.right);
-        }  
+        if(node == null) return;
+        //first keep going to the left most;
+        helper(node.left);
+        prev.right = node;
+        node.left = prev;
+        prev = node;
+        helper(node.right);
     }
 }
