@@ -14,18 +14,25 @@
  * }
  */
 class Solution {
-    List<Integer> list = new ArrayList<>();
     public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        dfs(root, res);
-        return res;
-    }
-    
-    public void dfs(TreeNode node, List<Integer> res) {
-        if(node != null) {
-            dfs(node.left, res);
-            res.add(node.val);
-            dfs(node.right,res);
+        //inorder start from the leftmost
+        //left - root - right
+        List<Integer> tree = new ArrayList<Integer>();
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode curr = root;
+        
+        while(curr != null || !stack.isEmpty()) {
+            //go to the left most and push every root into the stack
+            while(curr != null) {
+                stack.push(curr);
+                curr = curr.left;
+            }
+            //pop the curr root
+            curr = stack.pop();
+            tree.add(curr.val);
+            curr = curr.right;
         }
+        return tree;
     }
+
 }
