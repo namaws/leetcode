@@ -14,30 +14,29 @@
  * }
  */
 class BSTIterator {
-    ArrayList<Integer> inOrderTree;
-    int index;
+    Deque<TreeNode> stack;
+    
     public BSTIterator(TreeNode root) {
-        //Arrays containing all the nodes in the sorted order
-        this.inOrderTree = new ArrayList<Integer>();
-        //pointer to the next smallest element in the BST
-        this.index = -1;
-        
-        this.inOrder(root);
+        stack = new ArrayDeque<TreeNode>();
+        leftTraverse(root);
     }
     
-    private void inOrder(TreeNode root) {
-        if(root == null) return;
-        this.inOrder(root.left);
-        this.inOrderTree.add(root.val);
-        this.inOrder(root.right);
+    private void leftTraverse(TreeNode root) {
+        while(root != null) {
+            stack.push(root);
+            root = root.left;
+        }
     }
     
     public int next() {
-        return this.inOrderTree.get(++this.index);
+        TreeNode node = stack.pop();
+        leftTraverse(node.right);
+        return node.val;
+        
     }
     
     public boolean hasNext() {
-        return this.index+1 < this.inOrderTree.size();
+        return  !stack.isEmpty();
     }
 }
 
