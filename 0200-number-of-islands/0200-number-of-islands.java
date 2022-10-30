@@ -1,30 +1,45 @@
 class Solution {
     public int numIslands(char[][] grid) {
-        int num = 0;
-        int row = grid.length; 
+        Queue<Integer> queue = new LinkedList<>();
+        
+        int row = grid.length;
         int col = grid[0].length;
-        for(int r = 0; r<row; r++) {
+        int num = 0;
+        
+        for(int r=0; r<row; r++) {
             for(int c=0; c<col; c++) {
                 if(grid[r][c] == '1') {
                     num++;
-                    dfs(grid, r, c);
+                    grid[r][c] = '0';
+                    queue.add(r*col + c);
+                    while(!queue.isEmpty()) {
+                        int curr = queue.remove();
+                        int currR = curr/col;
+                        int currC = curr%col;
+                        //down
+                        if(currR-1 >=0 && grid[currR-1][currC] == '1') {
+                            queue.add((currR-1)*col + currC);
+                            grid[currR-1][currC] = '0';
+                        }
+                        
+                        if(currR+1 < row && grid[currR+1][currC] == '1') {
+                            queue.add((currR+1)*col + currC);
+                            grid[currR+1][currC] = '0';
+                        }
+                        
+                        if(currC-1 >= 0 && grid[currR][currC-1] == '1') {
+                            queue.add(currR*col + currC-1);
+                            grid[currR][currC-1] = '0';
+                        }
+                        
+                        if(currC+1 < col && grid[currR][currC+1] == '1') {
+                            queue.add(currR*col + currC+1);
+                            grid[currR][currC+1] = '0';
+                        }
+                    }
                 }
             }
         }
         return num;
-    }
-    
-    public void dfs(char[][] grid, int r, int c) {
-        int row = grid.length;
-        int col = grid[0].length;
-        if(r<0 || r>=grid.length || c<0 || c>=grid[0].length || grid[r][c] == '0') {
-            return;
-        }
-        
-        grid[r][c] = '0';
-        dfs(grid, r, c+1);
-        dfs(grid, r, c-1);
-        dfs(grid, r+1, c);
-        dfs(grid, r-1, c);
     }
 }
