@@ -10,30 +10,33 @@ class Node {
 
 class Solution {
     public Node flatten(Node head) {
-        if(head == null) return head;
+        if(head == null) return null;
         
-        Node dummy = new Node(0, null, head, null);
+        Node curr = head;
+        while(curr!=null) {
+            if(curr.child == null) {
+                curr = curr.next;
+            }
+            
+            else {
+                Node kid = curr.child;
+                
+                while(kid.next != null) {
+                    kid = kid.next;
+                }
+                
+                kid.next = curr.next;
+                
+                if(curr.next != null) {
+                    curr.next.prev = kid;
+                }
+                
+                curr.next = curr.child;
+                curr.child.prev = curr;
+                curr.child = null;
+            }
+        }
         
-        //each dfs flatten one level
-        flattenDFS(dummy, head);
-        
-        // head's prev pointer should be null
-        dummy.next.prev = null;
-        return dummy.next;
-    }
-    
-    public Node flattenDFS(Node prev, Node curr) {
-        if(curr == null) return prev;
-        curr.prev = prev;
-        prev.next = curr;
-        
-        Node temp = curr.next;
-        //cuz need to see if curr has child
-        // yes -> flatten 
-        // no -> return itself
-        Node tail = flattenDFS(curr, curr.child);
-        curr.child = null;
-        
-        return flattenDFS(tail, temp);
+        return head;
     }
 }
