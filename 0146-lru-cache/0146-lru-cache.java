@@ -62,10 +62,7 @@ class LRUCache {
         else {
             Node node = new Node(key, value);
             if(map.size() == capacity) {
-                System.out.println("capacity: "+ capacity);
-                System.out.println("size: "+ map.size());
                 map.remove(tail.prev.key);
-                System.out.println("oversize");
                 deleteNode(tail.prev);
             }
             addNode(node);
