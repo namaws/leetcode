@@ -1,37 +1,15 @@
 class Solution {
     public String removeDuplicates(String s, int k) {
-        Stack<Pair> stack = new Stack<>();
-        StringBuilder sb = new StringBuilder();
+        char[] ch = s.toCharArray();
         
-        for(int i=0; i<s.length(); i++) {
-            char c = s.charAt(i);
-            if(stack.isEmpty() || c != stack.peek().key) {
-                stack.push(new Pair(c, 1));
-            }
-            else {
-                if(++stack.peek().value == k) {
-                    stack.pop();
-                }
-            }
+        //inplace => two pointer
+        int[] count = new int[ch.length];
+        int l = 0;
+        for(int r=0; r<s.length(); l++, r++) {
+            ch[l] = ch[r]; // right is the current input -> replace left element, if needed
+            count[l] = (l>0 && ch[l-1] == ch[l]) ? count[l-1]+1: 1;
+            if(count[l] == k) l-=k;
         }
-        
-        while(!stack.isEmpty()) {
-            char c = stack.peek().key;
-            int cnt = stack.peek().value;
-            stack.pop();
-            while(cnt > 0) {
-                sb.append(c);
-                cnt--;
-            }
-        }
-        return sb.reverse().toString();
+        return new String(ch, 0, l);
     }
 }
-class Pair {
-        char key;
-        int value;
-        public Pair(char k, int v) {
-            this.key = k;
-            this.value = v;
-        }
-    }
