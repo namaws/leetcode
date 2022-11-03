@@ -8,7 +8,6 @@ class Solution {
         List<Map.Entry<Integer, Integer>> list = new ArrayList(map.entrySet());
         Collections.sort(list, (a,b) -> a.getValue() == b.getValue() ? b.getKey()-a.getKey() : a.getValue()-b.getValue());
         int index = 0;
-        int[] res = new int[nums.length];
         for(Map.Entry<Integer,Integer> entry:list) {
             int count = entry.getValue();
             int num = entry.getKey();
