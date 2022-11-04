@@ -34,9 +34,7 @@ class Solution {
                     list.add(new ArrayList(curr));
                 }
                 List<Node> child = node.children;
-                for(Node n: child) {
-                    q.add(n);
-                }
+                q.addAll(node.children);
             }
         }
         return list;
