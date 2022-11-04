@@ -9,34 +9,31 @@ class Node {
 */
 
 class Solution {
+    Node tail = null;
     public Node flatten(Node head) {
         if(head == null) return null;
         
-        Node curr = head;
-        while(curr!=null) {
-            if(curr.child == null) {
-                curr = curr.next;
-            }
-            
-            else {
-                Node kid = curr.child;
-                
-                while(kid.next != null) {
-                    kid = kid.next;
-                }
-                
-                kid.next = curr.next;
-                
-                if(curr.next != null) {
-                    curr.next.prev = kid;
-                }
-                
-                curr.next = curr.child;
-                curr.child.prev = curr;
-                curr.child = null;
-            }
-        }
+        head.prev = tail;
+        tail = head;
         
-        return head;
+        Node dummy = new Node(0, null, head, null);
+        
+        dfs(dummy, head);
+        
+        dummy.next.prev = null;
+        return dummy.next;     
+    }
+    
+    public Node dfs(Node prev, Node curr) {
+        if(curr == null) return prev;
+        curr.prev = prev;
+        prev.next = curr;
+        
+        Node temp = curr.next;
+        
+        Node tail = dfs(curr, curr.child);
+        
+        curr.child = null;
+        return dfs(tail, temp);
     }
 }
