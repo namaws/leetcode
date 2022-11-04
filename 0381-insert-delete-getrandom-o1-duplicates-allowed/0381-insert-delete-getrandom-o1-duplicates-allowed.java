@@ -1,20 +1,22 @@
 class RandomizedCollection {
-    List<Integer> list;
-    Map<Integer, Set<Integer>> map;
-    java.util.Random rand;
+    private List<Integer> list;
+    private Map<Integer, Set<Integer>> map;
+    private Random rand;
+    
     public RandomizedCollection() {
-        list = new ArrayList<>();
-        map = new HashMap<>();
-        rand = new java.util.Random();
+        list = new ArrayList();
+        map = new HashMap();
+        rand = new Random();
     }
     
     public boolean insert(int val) {
-        list.add(val);
         if(map.containsKey(val)) {
+            list.add(val);
             map.get(val).add(list.size()-1);
             return false;
         }
         else {
+            list.add(val);
             map.put(val, new HashSet<Integer>());
             map.get(val).add(list.size()-1);
             return true;
@@ -22,13 +24,7 @@ class RandomizedCollection {
     }
     
     public boolean remove(int val) {
-        if(!map.containsKey(val)) {
-            return false;
-        }
-        else {
-            //hashset no get();
-            //set.iterator() => go through set
-            //.next() get the first one
+        if(map.containsKey(val)) {
             int idx = map.get(val).iterator().next();
             map.get(val).remove(idx);
             if(idx < list.size()-1) {
@@ -37,10 +33,12 @@ class RandomizedCollection {
                 map.get(last).remove(list.size()-1);
                 map.get(last).add(idx);
             }
+            //remove val's idx
             list.remove(list.size()-1);
             if(map.get(val).isEmpty()) map.remove(val);
             return true;
         }
+        return false;
     }
     
     public int getRandom() {
