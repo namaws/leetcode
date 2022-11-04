@@ -1,43 +1,41 @@
 class Solution {
     public String decodeString(String s) {
-        // record square brackets
-        Stack<Integer> digit = new Stack<>();
-        Stack<String> string = new Stack<>();
+        Stack<Integer> count = new Stack();
+        Stack<String> decoding = new Stack();
         String res = "";
         int idx = 0;
-        while(idx < s.length()) {
+        while(idx <s.length()) {
             char c = s.charAt(idx);
-            //CASE 1 number
             if(Character.isDigit(c)) {
-                int count = 0;
+                int num = 0;
                 while(Character.isDigit(s.charAt(idx))) {
-                    count = 10*count + (s.charAt(idx)-'0');
-                    idx++;
+                    num = num*10 + (s.charAt(idx++)-'0');
                 }
-                digit.push(count);
+                count.push(num);
             }
             
-            //CASE 2 [
             else if(c == '[') {
-                string.push(res);
+                decoding.push(res);
                 res = "";
                 idx++;
             }
             
-            //CASE 3 ]
             else if(c == ']') {
-                StringBuilder temp = new StringBuilder(string.pop());
-                int repeat = digit.pop();
+                int repeat = count.pop();
+                StringBuilder temp = new StringBuilder(decoding.pop());
                 for(int i=0; i<repeat; i++) {
                     temp.append(res);
                 }
                 res = temp.toString();
                 idx++;
             }
+            
             else {
-                res += s.charAt(idx++);
+                res += c;
+                idx++;
             }
         }
+        
         return res;
     }
 }
