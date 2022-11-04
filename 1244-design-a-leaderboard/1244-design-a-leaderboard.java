@@ -10,14 +10,22 @@ class Leaderboard {
     }
     
     public int top(int K) {
-        List<Integer> values = new ArrayList<Integer>(this.scores.values());
-        Collections.sort(values);
+       
+        
+        PriorityQueue<Integer> heap = new PriorityQueue<>((a,b) -> a - b);
+        
+        for(int value: scores.values()) {
+            heap.offer(value);
+            if(heap.size() > K) {
+                heap.poll();
+            }
+        }
         
         int total = 0;
-        int size = values.size();
         for(int i=0; i<K; i++) {
-            total += values.get(size-i-1);
+            total += heap.poll();
         }
+        
         return total;
         
     }
