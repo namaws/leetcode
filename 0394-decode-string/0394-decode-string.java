@@ -1,41 +1,41 @@
 class Solution {
     public String decodeString(String s) {
+        //3[a2[c]] nested encoded string
+        // decode the innermost string and continue in an outward direction until the entire string is decoded
         Stack<Integer> count = new Stack();
         Stack<String> decoding = new Stack();
-        String res = "";
         int idx = 0;
+        String res = "";
         while(idx <s.length()) {
-            char c = s.charAt(idx);
-            if(Character.isDigit(c)) {
+            if(Character.isDigit(s.charAt(idx))) {
                 int num = 0;
                 while(Character.isDigit(s.charAt(idx))) {
-                    num = num*10 + (s.charAt(idx++)-'0');
+                    num = num*10 + (s.charAt(idx)-'0');
+                    idx++;
                 }
-                count.push(num);
+                count.push(num); 
             }
             
-            else if(c == '[') {
+            else if(s.charAt(idx) == '[') {
                 decoding.push(res);
                 res = "";
                 idx++;
             }
             
-            else if(c == ']') {
+            else if(s.charAt(idx) == ']') {
                 int repeat = count.pop();
-                StringBuilder temp = new StringBuilder(decoding.pop());
+                StringBuilder sb = new StringBuilder(decoding.pop());
                 for(int i=0; i<repeat; i++) {
-                    temp.append(res);
+                    sb.append(res);
                 }
-                res = temp.toString();
+                res = sb.toString();
                 idx++;
             }
-            
             else {
-                res += c;
+                res += s.charAt(idx);
                 idx++;
             }
         }
-        
         return res;
     }
 }
