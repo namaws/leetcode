@@ -1,31 +1,33 @@
 class Solution {
-     public int daysBetweenDates(String date1, String date2) {
-        int days1 = days(date1);
-        int days2 = days(date2);
-        return Math.abs(days1 - days2);
+    public int daysBetweenDates(String date1, String date2) {
+        return Math.abs(days(date1) - days(date2));
     }
-
-    int[] mdays = {0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365};
-
-    // days from 1900-1-0
-    private int days(String d) {
-        String[] ss = d.split("-");
-        int year = Integer.valueOf(ss[0]);
-        int month = Integer.valueOf(ss[1]);
-        int day = Integer.valueOf(ss[2]);
-        // years we spent, hence -1 because current year is not spent yet
-        int ydelta = year - 1 - 1900;
-        int dy = ydelta * 365 + ydelta / 4;// from 1900 every 4 years is leap year
-        // month-1, current month is not done yet
-        int dm = mdays[month - 1];
-        if (isleap(year) && month - 1 >= 2) {
-            dm++;
+    
+    
+    //count start from 1900-1-0
+    public int days(String date) {
+        String[] day = date.split("-");
+        int y = Integer.valueOf(day[0]);
+        int m = Integer.valueOf(day[1]);
+        int d = Integer.valueOf(day[2]);
+        
+        //count from January
+        int[] monthDays = {0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365};
+        
+        //how many years have been, but not including this year
+        //this year is not fully done yet
+        int fullYear = y - 1 - 1900;
+        //how many leap year -> add how many days
+        //start from 1900, every 4 year is leap year
+        int currDays = fullYear*365 + fullYear/4; 
+        int fullMonth = monthDays[m-1];
+        if(isLeapYear(y) && m-1 >= 2) {
+            currDays ++;
         }
-        return dy + dm + day;
+        return currDays + fullMonth + d;
     }
-
-    private boolean isleap(int year) {
-        return (year % 100 != 0 && year % 4 == 0) || (year % 100 == 0 && year % 400 == 0);
+    
+    private boolean isLeapYear(int year) {
+        return (year%100 != 0 && year%4 == 0) || year % 400 == 0;
     }
-
 }
