@@ -5,5 +5,6 @@ select employee_id,
     else 0
     end
     as bonus from employees
+    group by employee_id
     order by employee_id
     
