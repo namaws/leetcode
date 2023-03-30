@@ -5,6 +5,7 @@ class Solution {
         while(left <= right) {
             int curr = Math.min(height[left], height[right])*(right-left);
             container = Math.max(curr, container);
+            //can potential find bigger height if move right (since height[left] already bigger than height[right] at the current moment)
             if(height[left] >= height[right]) right--;
             else left++;
         }
