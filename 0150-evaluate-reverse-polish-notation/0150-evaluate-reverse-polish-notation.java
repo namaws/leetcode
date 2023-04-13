@@ -1,37 +1,34 @@
 class Solution {
     public int evalRPN(String[] tokens) {
         Stack<Integer> stack = new Stack();
+        Set<String> operations = Set.of("+","-","*","/");
+        
         for(String token: tokens) {
-            //digit
-            if(token.length()>1 || Character.isDigit(token.charAt(0)))
-                stack.add(Integer.valueOf(token));
-            else {
-                if(token.equals("*")) {
-                    int second = stack.pop();
-                    int first = stack.pop();
-                    int temp = first*second;
-                    stack.add(temp);
+            //check if stack has at least two -> in order to do valid operation
+            if(stack.size()>=2 && operations.contains(token)) {
+                int second = stack.pop();
+                int first = stack.pop();
+                int temp = 0;
+                
+                switch(token) {
+                        case "+":
+                            temp = first+second;
+                            break;
+                        case "-":
+                            temp = first-second;
+                            break;
+                        case "*":
+                            temp = first*second;
+                            break;
+                        case "/":
+                            temp = first/second;
+                            break;
                 }
-                else if(token.equals("/")) {
-                    int second = stack.pop();
-                    int first = stack.pop();
-                    int temp = first/second;
-                    stack.add(temp);
-                }
-                else if(token.equals("-")) {
-                    int second = stack.pop();
-                    int first = stack.pop();
-                    int temp = first-second;
-                    stack.add(temp);
-                }
-                else {
-                    int second = stack.pop();
-                    int first = stack.pop();
-                    int temp = first+second;
-                    stack.add(temp);
-                }
+                stack.push(temp);
             }
+            else
+                stack.push(Integer.valueOf(token));
         }
-        return stack.isEmpty()? 0: stack.pop();
+        return stack.pop();
     }
 }
