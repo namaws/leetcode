@@ -1,50 +1,37 @@
 class Solution {
     public int evalRPN(String[] tokens) {
-        
-        Stack<Integer> stack = new Stack<>();
-        Set<String> operation = Set.of( "+", "-", "*", "/" );
-        
-        for( String s: tokens ) {
-            if( stack.size() >= 2 && operation.contains(s) ) {
-                
-                int first = stack.pop();
-                int second = stack.pop();
-                int temp = 0;
-                
-                
-/*                if ( s.equals("+") ) temp = second + first; // string not char, so need to use .equals to compare
-                else if( s.equals("-") ) temp = second - first;
-                else if( s.equals("*") ) temp = second * first;
-                else temp = second/first;
-*/
-                
-                switch(s) {
-                    case "+":
-                        temp = second + first;
-                        break;
-                        
-                    case "-":
-                        temp = second - first;
-                        break;
-                    case "*":
-                        temp = second * first;
-                        break;
-                    case "/":
-                        temp = second / first;
-                        break;
+        Stack<Integer> stack = new Stack();
+        for(String token: tokens) {
+            //digit
+            if(token.length()>1 || Character.isDigit(token.charAt(0)))
+                stack.add(Integer.valueOf(token));
+            else {
+                if(token.equals("*")) {
+                    int second = stack.pop();
+                    int first = stack.pop();
+                    int temp = first*second;
+                    stack.add(temp);
                 }
-                
-                stack.push(temp);
+                else if(token.equals("/")) {
+                    int second = stack.pop();
+                    int first = stack.pop();
+                    int temp = first/second;
+                    stack.add(temp);
+                }
+                else if(token.equals("-")) {
+                    int second = stack.pop();
+                    int first = stack.pop();
+                    int temp = first-second;
+                    stack.add(temp);
+                }
+                else {
+                    int second = stack.pop();
+                    int first = stack.pop();
+                    int temp = first+second;
+                    stack.add(temp);
+                }
             }
-            
-            else
-                stack.push(Integer.valueOf(s));
         }
-        
-        return stack.pop();
-        
+        return stack.isEmpty()? 0: stack.pop();
     }
 }
-
-// time O(n)
-// space O(n)
