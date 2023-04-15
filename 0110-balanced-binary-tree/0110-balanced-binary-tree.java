@@ -22,7 +22,7 @@ class Solution {
     
     public int findHeight(TreeNode root) {
         //empty tree height is 0
-        if(root == null) return -1;
+        if(root == null) return 0;
         return Math.max(findHeight(root.left), findHeight(root.right))+1;
     }
 }
