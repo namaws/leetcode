@@ -27,10 +27,8 @@ class Solution {
                     q.offer(curr.left);
                 if(curr.right != null)
                     q.offer(curr.right);
-                if(size == 1) {
+                if(size == 1) 
                     list.add(curr.val);
-                    System.out.println(curr.val);
-                }
                 size--;
             }
         }
