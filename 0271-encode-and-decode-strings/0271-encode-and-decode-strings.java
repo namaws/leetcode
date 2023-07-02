@@ -19,8 +19,9 @@ public class Codec {
             while(s.charAt(ptr2) != '#')
                 ptr2++;
             int len = Integer.valueOf(s.substring(ptr1, ptr2));
+            String str = s.substring(ptr2+1, ptr2+len+1);
+            result.add(str);
             ptr1 = ptr2+len+1;
-            result.add(s.substring(++ptr2, ptr1));
         }
         return result;
     }
