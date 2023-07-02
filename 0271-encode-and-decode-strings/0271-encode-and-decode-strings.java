@@ -4,28 +4,25 @@ public class Codec {
     public String encode(List<String> strs) {
         StringBuilder sb = new StringBuilder();
         for(String str: strs) {
-            sb.append(str.length()+"#"+str);
+            int len = str.length();
+            sb.append(len+"#"+str);
         }
         return sb.toString();
     }
 
     // Decodes a single string to a list of strings.
     public List<String> decode(String s) {
-        List<String> list = new ArrayList();
-        int p1 = 0;
-        while(p1 < s.length()) {
-            int p2 = p1;
-            //find the number of length
-            while(s.charAt(p2) != '#') {
-                p2++;
-            }
-            // change the string of number into integer
-            int length = Integer.valueOf(s.substring(p1, p2));
-            //make p1 go all the way to the end of that word
-            p1 = p2 + length + 1;
-            list.add(s.substring(p2+1, p1));
+        List<String> result = new ArrayList();
+        int ptr1 = 0;
+        while(ptr1 < s.length()) {
+            int ptr2 = ptr1;
+            while(s.charAt(ptr2) != '#')
+                ptr2++;
+            int len = Integer.valueOf(s.substring(ptr1, ptr2));
+            ptr1 = ptr2+len+1;
+            result.add(s.substring(++ptr2, ptr1));
         }
-        return list;
+        return result;
     }
 }
 
