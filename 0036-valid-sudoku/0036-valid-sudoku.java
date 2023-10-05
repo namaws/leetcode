@@ -1,21 +1,26 @@
 class Solution {
     public boolean isValidSudoku(char[][] board) {
-        //create list for rol, col and box
-        //the element in the list is hashset, no dulplicate allow in the set
-        List<Set<Character>> rowCnt = new ArrayList();
-        List<Set<Character>> colCnt = new ArrayList();
-        List<Set<Character>> boxCnt = new ArrayList();
-        for(int i=0; i<9; i++) {
-            rowCnt.add(new HashSet());
-            colCnt.add(new HashSet());
-            boxCnt.add(new HashSet());
+        List<Set<Character>> col = new ArrayList(); // count the virtical line
+        List<Set<Character>> row = new ArrayList(); // count the horizontal line
+        List<Set<Character>> box = new ArrayList();
+        
+        for(int i=0; i<board.length; i++) {
+            col.add(new HashSet());
+            row.add(new HashSet());
+            box.add(new HashSet());
         }
-        for(int r=0; r<9; r++) {
-            for(int c=0; c<9; c++) {
-                if(board[r][c] == '.') continue;
-                if(!rowCnt.get(r).add(board[r][c])) return false;
-                if(!colCnt.get(c).add(board[r][c])) return false;
-                if(!boxCnt.get(r/3*3+c/3).add(board[r][c])) return false;
+
+        for(int r=0; r<board.length; r++) {
+            for(int c=0; c<board[0].length; c++) {
+                char ch = board[r][c];
+                if(ch == '.')
+                    continue;
+                else if(!col.get(r).add(ch))
+                    return false;
+                else if(!row.get(c).add(ch))
+                    return false;
+                else if(!box.get(r/3*3+c/3).add(ch))
+                    return false;
             }
         }
         return true;
