@@ -1,16 +1,26 @@
 class Solution {
-    public int[] twoSum(int[] numbers, int target) {
-        int ptr1 = 0, ptr2 = numbers.length-1;
-        while(ptr1 < ptr2) {
-            int sum = numbers[ptr1]+numbers[ptr2];
-            // cuz sorted, the only way to make sum smaller is to move ptr2 forward
-            if(sum > target)
-                ptr2--;
-            else if(sum < target)
-                ptr1++;
-            else 
+    public int[] twoSum(int[] nums, int target) {
+        //using binary search (curr max, curr min) to find the answer
+        int left = 0;
+        int right = nums.length-1;
+        int[] result = new int[2];
+        while(left < right) {
+            int curr = nums[left]+nums[right];
+            if(curr < target) {
+                left++;
+                continue;
+            }
+            else if(curr > target) {
+                right--;
+                continue;
+            }
+            else {
+                result[0] = left+1;
+                result[1] = right+1;
                 break;
+            }
         }
-        return new int[]{ptr1+1, ptr2+1};
+        
+        return result;
     }
 }
