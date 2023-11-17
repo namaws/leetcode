@@ -1,14 +1,17 @@
 class Solution {
     public int maxArea(int[] height) {
-        int left = 0, right = height.length-1;
-        int container = 0;
+        int len = height.length;
+        int left = 0;
+        int right = len-1;
+        int maxContain = 0;
         while(left < right) {
-            int currVol = Math.min(height[right], height[left])*(right-left);
-            container = Math.max(container, currVol);
-            //move the smaller value of pointer, as trying to find the max
-            if(height[left]>=height[right]) right--;
-            else left++;
+            int curr = Math.min(height[left], height[right])*(right-left);
+            maxContain = Math.max(maxContain, curr);
+            if(height[left]<height[right])
+                left++;
+            else 
+                right--;
         }
-        return container;
+        return maxContain;
     }
 }
