@@ -1,28 +1,35 @@
 class Solution {
     public boolean isValidSudoku(char[][] board) {
-        List<Set<Character>> col = new ArrayList(); // count the virtical line
-        List<Set<Character>> row = new ArrayList(); // count the horizontal line
-        List<Set<Character>> box = new ArrayList();
+        
+        List<Set<Character>> rows = new ArrayList();
+        List<Set<Character>> cols = new ArrayList();
+        List<Set<Character>> boxes = new ArrayList();
+        
+        for(int i=0; i<9; i++) {
+            rows.add(new HashSet());
+            cols.add(new HashSet());
+            boxes.add(new HashSet());
+        }
         
         for(int i=0; i<board.length; i++) {
-            col.add(new HashSet());
-            row.add(new HashSet());
-            box.add(new HashSet());
-        }
-
-        for(int r=0; r<board.length; r++) {
-            for(int c=0; c<board[0].length; c++) {
-                char ch = board[r][c];
-                if(ch == '.')
-                    continue;
-                else if(!col.get(r).add(ch))
+            for(int j=0; j<board.length; j++) {
+                char c = board[i][j];
+                if(c == '.') continue;
+                //check rows
+                if(rows.get(i).contains(c))
                     return false;
-                else if(!row.get(c).add(ch))
+                if(cols.get(j).contains(c))
                     return false;
-                else if(!box.get(r/3*3+c/3).add(ch))
+                if(boxes.get(i/3*3+j/3).contains(c))
                     return false;
+                rows.get(i).add(c);
+                cols.get(j).add(c);
+                boxes.get(i/3*3+j/3).add(c);
+                
             }
         }
         return true;
+        
+        
     }
 }
