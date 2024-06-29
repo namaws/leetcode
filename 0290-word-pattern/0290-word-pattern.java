@@ -9,6 +9,8 @@ class Solution {
         //1. if both non-exist -> new mapping
         //2. if key not exist but value exist -> return false
         //3. if key exist -> check if value is the same
+        //time complexity O(n)
+        //space complexity O(n)
         
         String[] strs = s.split("\\s+");
         char[] charArr = pattern.toCharArray();
