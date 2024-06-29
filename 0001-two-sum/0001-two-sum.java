@@ -10,10 +10,9 @@ class Solution {
             if(map.containsKey(remain)) {
                 result[0] = i;
                 result[1] = map.get(remain);
+                break;
             }
-            
-            else
-                map.put(nums[i], i);
+            map.put(nums[i], i);
         }
         return result;
     }
