@@ -7,6 +7,8 @@ class Solution {
         int arrowCnt = 1;
         
         for(int i=1; i<points.length; i++) {
+            //curr balloon start point is larger than arrowPoint
+            //-> oo overlap need another arrow
             if(points[i][0] > arrowPnt) {
                 arrowCnt++;
                 arrowPnt = points[i][1];
