@@ -1,34 +1,27 @@
 class Solution {
     public int evalRPN(String[] tokens) {
+        //use stack to give track of current value
         Stack<Integer> stack = new Stack();
-        Set<String> operations = Set.of("+","-","*","/");
+        Set<String> operations = Set.of("+", "-", "*", "/");
         
-        for(String token: tokens) {
-            //check if stack has at least two -> in order to do valid operation
-            if(stack.size()>=2 && operations.contains(token)) {
-                int second = stack.pop();
-                int first = stack.pop();
-                int temp = 0;
+        for(int i=0; i<tokens.length; i++) {
+            if(stack.size() >=2 && operations.contains(tokens[i])) {
+                int val2 = stack.pop();
+                int val1 = stack.pop();
                 
-                switch(token) {
-                        case "+":
-                            temp = first+second;
-                            break;
-                        case "-":
-                            temp = first-second;
-                            break;
-                        case "*":
-                            temp = first*second;
-                            break;
-                        case "/":
-                            temp = first/second;
-                            break;
-                }
-                stack.push(temp);
+                if(tokens[i].equals("+"))
+                    stack.add(val1+val2);
+                else if(tokens[i].equals("-"))
+                    stack.add(val1-val2);
+                else if(tokens[i].equals("*"))
+                    stack.add(val1*val2);
+                else
+                    stack.add(val1/val2);
             }
             else
-                stack.push(Integer.valueOf(token));
+                stack.add(Integer.valueOf(tokens[i]));
         }
+        
         return stack.pop();
     }
 }
