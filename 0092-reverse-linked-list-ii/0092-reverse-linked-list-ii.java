@@ -51,7 +51,6 @@ class Solution {
         while(preRange.next != null) {
             preRange = preRange.next;
         }
-        
         preRange.next = curr;
         
         return dummy.next;
