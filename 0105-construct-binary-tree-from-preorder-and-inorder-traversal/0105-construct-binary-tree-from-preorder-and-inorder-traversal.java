@@ -29,6 +29,5 @@ class Solution {
         root.right = buildTree(Arrays.copyOfRange(preorder, index+1, preorder.length),Arrays.copyOfRange(inorder, index+1, inorder.length));
         
         return root;
-        
     }
 }
