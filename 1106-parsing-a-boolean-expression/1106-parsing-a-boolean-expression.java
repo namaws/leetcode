@@ -1,40 +1,40 @@
-class Solution {
+public class Solution {
+
     public boolean parseBoolExpr(String expression) {
-        Stack<Character> operator = new Stack();
-        Stack<Character> represent = new Stack();
-        
-        for(int i=0; i<expression.length(); i++) {
-            char c = expression.charAt(i);
-            if(c == ',') continue;
-            else if(c == '(' || c == 't' || c == 'f')
-                represent.push(c);
-            else if(c == '!' || c == '&' || c == '|')
-                operator.push(c);
-            //close parantheses
-            else {
-                boolean hasTrue = false;
-                boolean hasFalse = false;
-                while(represent.peek() != '(') {
-                    if(represent.peek() == 't')
-                        hasTrue = true;
-                    else
-                        hasFalse = true;
-                    represent.pop();
+        Stack<Character> st = new Stack<>();
+
+        for (char currChar : expression.toCharArray()) {
+            if (currChar == ',' || currChar == '(') continue; 
+            if (
+                currChar == 't' ||
+                currChar == 'f' ||
+                currChar == '!' ||
+                currChar == '&' ||
+                currChar == '|'
+            ) {
+                st.push(currChar);
+            }
+            else if (currChar == ')') {
+                boolean hasTrue = false, hasFalse = false;
+
+                while (
+                    st.peek() != '!' && st.peek() != '&' && st.peek() != '|'
+                ) {
+                    char topValue = st.pop();
+                    if (topValue == 't') hasTrue = true;
+                    if (topValue == 'f') hasFalse = true;
                 }
-                if(represent.peek() == '(') {
-                    represent.pop();
-                    char op = operator.pop();
-                    if(op == '&') 
-                        represent.push(hasFalse? 'f':'t');
-                    else if(op == '|')
-                        represent.push(hasTrue? 't':'f');
-                    else
-                        represent.push(hasTrue? 'f': 't');
-                    
+
+                char op = st.pop();
+                if (op == '!') {
+                    st.push(hasTrue ? 'f' : 't');
+                } else if (op == '&') {
+                    st.push(hasFalse ? 'f' : 't');
+                } else {
+                    st.push(hasTrue ? 't' : 'f');
                 }
             }
-            
         }
-        return represent.peek() == 't';
+        return st.peek() == 't';
     }
 }
