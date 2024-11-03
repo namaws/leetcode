@@ -23,6 +23,7 @@ class Solution {
             if(digit < 0 || digit > 9) break;
             
             //if need to round up
+            // a || b && c => a || (b&&c)
             if(Integer.MAX_VALUE/10 < total || Integer.MAX_VALUE/10 == total && Integer.MAX_VALUE%10 < digit)
                 return isNeg == true? Integer.MIN_VALUE: Integer.MAX_VALUE;
             total = 10*total+digit;
