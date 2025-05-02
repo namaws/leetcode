@@ -7,6 +7,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 ## Array
 |  |
 | ------- |
+| [0078-subsets](https://github.com/namaws/leetcode/tree/master/0078-subsets) |
 | [0198-house-robber](https://github.com/namaws/leetcode/tree/master/0198-house-robber) |
 ## Dynamic Programming
 |  |
@@ -28,4 +29,12 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0100-same-tree](https://github.com/namaws/leetcode/tree/master/0100-same-tree) |
+## Backtracking
+|  |
+| ------- |
+| [0078-subsets](https://github.com/namaws/leetcode/tree/master/0078-subsets) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0078-subsets](https://github.com/namaws/leetcode/tree/master/0078-subsets) |
 <!---LeetCode Topics End-->
