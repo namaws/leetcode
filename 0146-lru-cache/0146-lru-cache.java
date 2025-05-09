@@ -1,73 +1,69 @@
 class LRUCache {
+    private final int capacity;
+
     class Node {
-        int key;
-        int value;
-        Node prev;
-        Node next;
-        
-        public Node(int key, int value) {
+        int key, value;
+        Node prev, next;
+        Node (int key, int value) {
             this.key = key;
             this.value = value;
         }
     }
-    
-    private int capacity, count;
-    private Map<Integer, Node> map;
-    private Node head, tail;
-    
+
+    Node tail, head;
+    Map<Integer, Node> map;
+
+    //initialize LRUCache
     public LRUCache(int capacity) {
-        map = new HashMap<>();
-        head = new Node(0, 0);
+        this.capacity = capacity;
+        map = new HashMap();
         tail = new Node(0, 0);
+        head = new Node(0, 0);
         head.next = tail;
         tail.prev = head;
         head.prev = null;
         tail.next = null;
-        count = 0;
-        this.capacity = capacity;
-    }
-    
-    public void addNode(Node node) {
-        node.next = head.next;
-        head.next.prev = node;
-        node.prev = head;
-        head.next = node;
-    }
-    
-    public void deleteNode(Node node) {
-        node.prev.next = node.next;
-        node.next.prev = node.prev;
     }
     
     public int get(int key) {
-        if(map.containsKey(key)) {
-            Node node = map.get(key);
-            int result = node.value;
-            
-            // delete the node, and add it again, so it can be the next node of head
-            deleteNode(node);
-            addNode(node);
-            return result;
-        }
-        return -1;
+        if(!map.containsKey(key)) return -1;
+        //remove the exisiting key Node, then put the key Node at head
+        Node node = map.get(key);
+        remove(node);
+        insertToHead(node);
+        return node.value;
     }
     
     public void put(int key, int value) {
         if(map.containsKey(key)) {
             Node node = map.get(key);
-            deleteNode(node);
-            node.value = value;
-            addNode(node);
+            remove(node);
+            node.value = value; //update the value -> don't need to update in the map, as object is by reference
+            insertToHead(node);
+            //map.put(key, node); //update in the map
         }
         else {
-            Node node = new Node(key, value);
             if(map.size() == capacity) {
                 map.remove(tail.prev.key);
-                deleteNode(tail.prev);
+                //remove the least recent used node at tail
+                remove(tail.prev);
             }
-            addNode(node);
+            Node node = new Node(key, value);
+            insertToHead(node);
             map.put(key, node);
         }
+    }
+
+    private void remove(Node node) {
+        node.next.prev = node.prev;
+        node.prev.next = node.next;
+    }
+
+    private void insertToHead(Node node) {
+        head.next.prev = node;
+        node.next = head.next;
+        head.next = node;
+        node.prev = head;
     }
 }
 
