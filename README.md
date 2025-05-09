@@ -47,4 +47,20 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0210-course-schedule-ii](https://github.com/namaws/leetcode/tree/master/0210-course-schedule-ii) |
+## Hash Table
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/namaws/leetcode/tree/master/0146-lru-cache) |
+## Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/namaws/leetcode/tree/master/0146-lru-cache) |
+## Design
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/namaws/leetcode/tree/master/0146-lru-cache) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/namaws/leetcode/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
