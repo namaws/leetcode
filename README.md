@@ -43,10 +43,12 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0210-course-schedule-ii](https://github.com/namaws/leetcode/tree/master/0210-course-schedule-ii) |
+| [0511-all-paths-from-source-lead-to-destination](https://github.com/namaws/leetcode/tree/master/0511-all-paths-from-source-lead-to-destination) |
 ## Topological Sort
 |  |
 | ------- |
 | [0210-course-schedule-ii](https://github.com/namaws/leetcode/tree/master/0210-course-schedule-ii) |
+| [0511-all-paths-from-source-lead-to-destination](https://github.com/namaws/leetcode/tree/master/0511-all-paths-from-source-lead-to-destination) |
 ## Hash Table
 |  |
 | ------- |
