@@ -15,12 +15,16 @@ class Node {
 
 class Solution {
     public Node copyRandomList(Node head) {
+        //k,v -> original node, copy node
         Map<Node, Node> map = new HashMap();
+        
+        //copy all of the nodes
         Node curr = head;
         while(curr != null) {
             map.put(curr, new Node(curr.val));
             curr = curr.next;
         }
+        //re-point to head, and start to create next and random pointer for each nodes
         curr = head;
         while(curr != null) {
             map.get(curr).next = map.get(curr.next);
