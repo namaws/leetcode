@@ -56,10 +56,12 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 ## Hash Table
 |  |
 | ------- |
+| [0141-linked-list-cycle](https://github.com/namaws/leetcode/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/namaws/leetcode/tree/master/0146-lru-cache) |
 ## Linked List
 |  |
 | ------- |
+| [0141-linked-list-cycle](https://github.com/namaws/leetcode/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/namaws/leetcode/tree/master/0146-lru-cache) |
 ## Design
 |  |
@@ -77,4 +79,8 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0064-minimum-path-sum](https://github.com/namaws/leetcode/tree/master/0064-minimum-path-sum) |
+## Two Pointers
+|  |
+| ------- |
+| [0141-linked-list-cycle](https://github.com/namaws/leetcode/tree/master/0141-linked-list-cycle) |
 <!---LeetCode Topics End-->
