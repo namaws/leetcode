@@ -8,25 +8,53 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+
+ /**
+public class ListNode {
+    int val;
+    ListNode next;
+    ListNode() {};
+    ListNode(int val) {this.val = val;}
+    ListNode(int val, ListNode next) {this.val = val; this.next = next;}
+} */
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        // can't add two number together first, cuz it might exceed the integer/long limit
-        ListNode dummyHead = new ListNode(0);
-        ListNode p = l1, q = l2, curr = dummyHead;
-        int carry = 0; // to update if there's overflow
-        while(p != null || q != null) {
-            int x = (p != null) ? p.val : 0;// if p is not null, put p's value in x
-            int y = (q != null) ? q.val : 0;// if q is not null, put q's value in y
-            int sum = carry + x + y;
-            carry = sum/10;
-            curr.next = new ListNode(sum%10);
-            curr = curr.next;
-            if(p != null) p = p.next;
-            if(q != null) q = q.next;
+        ListNode dum = new ListNode(0);
+        ListNode result = dum;
+        int val = 0;
+        boolean carry = false;
+        while(l1 != null || l2 != null) {
+            if(l1 == null) {
+                val = l2.val;
+                l2 = l2.next;
+            }
+            else if(l2 == null) {
+                val = l1.val;
+                l1 = l1.next;
+            }
+            else {
+                val = l1.val+l2.val;
+                l1 = l1.next;
+                l2 = l2.next;
+            }
+            //previous carry over
+            if(carry) val += 1;
+
+            if(val >= 10) {
+                carry = true;
+                val %= 10;
+            }
+            else
+                carry = false;
+            
+            ListNode curr = new ListNode(val);
+            dum.next = curr;
+            dum = dum.next;
         }
-        if(carry > 0) {
-            curr.next = new ListNode(carry);
+        if(carry) {
+            ListNode curr = new ListNode(1);
+            dum.next = curr;
         }
-        return dummyHead.next;
+        return result.next;
     }
 }
