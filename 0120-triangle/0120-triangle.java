@@ -3,11 +3,14 @@ class Solution {
         for(int i=1; i<triangle.size(); i++) {
             for(int j=0; j<=i; j++) {
                 int smallestAbove = Integer.MAX_VALUE;
-
-                //make sure it is not the first item in the row
+                /**
+                1. the first item will only go in the second if statement
+                2. the item in the middle will go in both if statement
+                3. the last item will go in the first statement
+                 */
                 if(j>0)
                     smallestAbove = triangle.get(i-1).get(j-1);
-                //make sure it is not the last item in the row
+                
                 if(j<i)
                     smallestAbove = Math.min(smallestAbove, triangle.get(i-1).get(j));
 
