@@ -1,12 +1,19 @@
 class Solution {
     public int minimumTotal(List<List<Integer>> triangle) {
-        int[] dp = new int[triangle.size()+1];
-        
-        for(int i=triangle.size()-1; i>=0; i--) {
-            for(int j=0; j<triangle.get(i).size(); j++) {
-                dp[j] = triangle.get(i).get(j) + Math.min(dp[j], dp[j+1]);
+        for(int i=1; i<triangle.size(); i++) {
+            for(int j=0; j<=i; j++) {
+                int smallestAbove = Integer.MAX_VALUE;
+
+                //make sure it is not the first item in the row
+                if(j>0)
+                    smallestAbove = triangle.get(i-1).get(j-1);
+                //make sure it is not the last item in the row
+                if(j<i)
+                    smallestAbove = Math.min(smallestAbove, triangle.get(i-1).get(j));
+
+                triangle.get(i).set(j, smallestAbove+ triangle.get(i).get(j));
             }
         }
-        return dp[0];
+        return Collections.min(triangle.get(triangle.size()-1));
     }
 }
