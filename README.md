@@ -7,12 +7,14 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 ## Array
 |  |
 | ------- |
+| [0064-minimum-path-sum](https://github.com/namaws/leetcode/tree/master/0064-minimum-path-sum) |
 | [0078-subsets](https://github.com/namaws/leetcode/tree/master/0078-subsets) |
 | [0120-triangle](https://github.com/namaws/leetcode/tree/master/0120-triangle) |
 | [0198-house-robber](https://github.com/namaws/leetcode/tree/master/0198-house-robber) |
 ## Dynamic Programming
 |  |
 | ------- |
+| [0064-minimum-path-sum](https://github.com/namaws/leetcode/tree/master/0064-minimum-path-sum) |
 | [0120-triangle](https://github.com/namaws/leetcode/tree/master/0120-triangle) |
 | [0198-house-robber](https://github.com/namaws/leetcode/tree/master/0198-house-robber) |
 ## Tree
@@ -71,4 +73,8 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0006-zigzag-conversion](https://github.com/namaws/leetcode/tree/master/0006-zigzag-conversion) |
+## Matrix
+|  |
+| ------- |
+| [0064-minimum-path-sum](https://github.com/namaws/leetcode/tree/master/0064-minimum-path-sum) |
 <!---LeetCode Topics End-->
