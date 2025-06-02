@@ -28,6 +28,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/namaws/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/namaws/leetcode/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/namaws/leetcode/tree/master/0117-populating-next-right-pointers-in-each-node-ii) |
+| [0173-binary-search-tree-iterator](https://github.com/namaws/leetcode/tree/master/0173-binary-search-tree-iterator) |
 | [0226-invert-binary-tree](https://github.com/namaws/leetcode/tree/master/0226-invert-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/namaws/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 ## Depth-First Search
@@ -60,6 +61,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/namaws/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/namaws/leetcode/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/namaws/leetcode/tree/master/0117-populating-next-right-pointers-in-each-node-ii) |
+| [0173-binary-search-tree-iterator](https://github.com/namaws/leetcode/tree/master/0173-binary-search-tree-iterator) |
 | [0226-invert-binary-tree](https://github.com/namaws/leetcode/tree/master/0226-invert-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/namaws/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 ## Backtracking
@@ -108,6 +110,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | ------- |
 | [0146-lru-cache](https://github.com/namaws/leetcode/tree/master/0146-lru-cache) |
 | [0170-two-sum-iii-data-structure-design](https://github.com/namaws/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
+| [0173-binary-search-tree-iterator](https://github.com/namaws/leetcode/tree/master/0173-binary-search-tree-iterator) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/namaws/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 ## Doubly-Linked List
 |  |
@@ -144,6 +147,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/namaws/leetcode/tree/master/0114-flatten-binary-tree-to-linked-list) |
+| [0173-binary-search-tree-iterator](https://github.com/namaws/leetcode/tree/master/0173-binary-search-tree-iterator) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -152,4 +156,12 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0170-two-sum-iii-data-structure-design](https://github.com/namaws/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0173-binary-search-tree-iterator](https://github.com/namaws/leetcode/tree/master/0173-binary-search-tree-iterator) |
+## Iterator
+|  |
+| ------- |
+| [0173-binary-search-tree-iterator](https://github.com/namaws/leetcode/tree/master/0173-binary-search-tree-iterator) |
 <!---LeetCode Topics End-->
