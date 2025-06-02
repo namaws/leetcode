@@ -9,6 +9,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | ------- |
 | [0064-minimum-path-sum](https://github.com/namaws/leetcode/tree/master/0064-minimum-path-sum) |
 | [0078-subsets](https://github.com/namaws/leetcode/tree/master/0078-subsets) |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/namaws/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0120-triangle](https://github.com/namaws/leetcode/tree/master/0120-triangle) |
 | [0198-house-robber](https://github.com/namaws/leetcode/tree/master/0198-house-robber) |
 ## Dynamic Programming
@@ -23,6 +24,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0100-same-tree](https://github.com/namaws/leetcode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/namaws/leetcode/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/namaws/leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/namaws/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/namaws/leetcode/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0226-invert-binary-tree](https://github.com/namaws/leetcode/tree/master/0226-invert-binary-tree) |
 ## Depth-First Search
@@ -48,6 +50,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0100-same-tree](https://github.com/namaws/leetcode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/namaws/leetcode/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/namaws/leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/namaws/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/namaws/leetcode/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0226-invert-binary-tree](https://github.com/namaws/leetcode/tree/master/0226-invert-binary-tree) |
 ## Backtracking
@@ -71,6 +74,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 ## Hash Table
 |  |
 | ------- |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/namaws/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0138-copy-list-with-random-pointer](https://github.com/namaws/leetcode/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/namaws/leetcode/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/namaws/leetcode/tree/master/0146-lru-cache) |
@@ -125,4 +129,8 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/namaws/leetcode/tree/master/0114-flatten-binary-tree-to-linked-list) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/namaws/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 <!---LeetCode Topics End-->
