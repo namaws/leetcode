@@ -17,7 +17,7 @@ public class Codec {
     private String helperSerialize(TreeNode node, String str) {
         if(node == null) str+="null,";
         else {
-        str += String.valueOf(node.val) + ",";
+        str += str.valueOf(node.val) + ",";
         str = helperSerialize(node.left, str);
         str = helperSerialize(node.right, str);
         }
