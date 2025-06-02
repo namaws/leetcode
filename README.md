@@ -13,6 +13,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0120-triangle](https://github.com/namaws/leetcode/tree/master/0120-triangle) |
 | [0170-two-sum-iii-data-structure-design](https://github.com/namaws/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0198-house-robber](https://github.com/namaws/leetcode/tree/master/0198-house-robber) |
+| [0737-sentence-similarity-ii](https://github.com/namaws/leetcode/tree/master/0737-sentence-similarity-ii) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -42,6 +43,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0210-course-schedule-ii](https://github.com/namaws/leetcode/tree/master/0210-course-schedule-ii) |
 | [0226-invert-binary-tree](https://github.com/namaws/leetcode/tree/master/0226-invert-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/namaws/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0737-sentence-similarity-ii](https://github.com/namaws/leetcode/tree/master/0737-sentence-similarity-ii) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -52,6 +54,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0210-course-schedule-ii](https://github.com/namaws/leetcode/tree/master/0210-course-schedule-ii) |
 | [0226-invert-binary-tree](https://github.com/namaws/leetcode/tree/master/0226-invert-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/namaws/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0737-sentence-similarity-ii](https://github.com/namaws/leetcode/tree/master/0737-sentence-similarity-ii) |
 ## Binary Tree
 |  |
 | ------- |
@@ -90,6 +93,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0141-linked-list-cycle](https://github.com/namaws/leetcode/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/namaws/leetcode/tree/master/0146-lru-cache) |
 | [0170-two-sum-iii-data-structure-design](https://github.com/namaws/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
+| [0737-sentence-similarity-ii](https://github.com/namaws/leetcode/tree/master/0737-sentence-similarity-ii) |
 ## Linked List
 |  |
 | ------- |
@@ -121,6 +125,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | ------- |
 | [0006-zigzag-conversion](https://github.com/namaws/leetcode/tree/master/0006-zigzag-conversion) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/namaws/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0737-sentence-similarity-ii](https://github.com/namaws/leetcode/tree/master/0737-sentence-similarity-ii) |
 ## Matrix
 |  |
 | ------- |
@@ -164,4 +169,8 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0173-binary-search-tree-iterator](https://github.com/namaws/leetcode/tree/master/0173-binary-search-tree-iterator) |
+## Union Find
+|  |
+| ------- |
+| [0737-sentence-similarity-ii](https://github.com/namaws/leetcode/tree/master/0737-sentence-similarity-ii) |
 <!---LeetCode Topics End-->
