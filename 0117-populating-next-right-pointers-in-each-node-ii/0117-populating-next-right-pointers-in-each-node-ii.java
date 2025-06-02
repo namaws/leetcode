@@ -24,18 +24,20 @@ class Node {
 class Solution {
     public Node connect(Node root) {
         if(root == null) return null;
-        //using stack, push left first
-        Queue<Node> q = new LinkedList<>();
-        q.add(root);
-        
+        Queue<Node> q = new LinkedList();
+
+        q.offer(root);
+
         while(!q.isEmpty()) {
             int size = q.size();
-            
-            for(int i=0; i<size; i++) {
-                Node node = q.poll();
-                if(i<size-1) node.next = q.peek();
-                if(node.left != null) q.add(node.left);
-                if(node.right != null) q.add(node.right);
+            while(size > 0) {
+                Node curr = q.poll();
+                size--;
+                if(curr.left != null) q.offer(curr.left);
+                if(curr.right != null) q.offer(curr.right);
+
+                if(size == 0) curr.next = null;
+                if(size > 0) curr.next = q.peek();
             }
         }
         return root;
