@@ -7,6 +7,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 ## Array
 |  |
 | ------- |
+| [0054-spiral-matrix](https://github.com/namaws/leetcode/tree/master/0054-spiral-matrix) |
 | [0064-minimum-path-sum](https://github.com/namaws/leetcode/tree/master/0064-minimum-path-sum) |
 | [0078-subsets](https://github.com/namaws/leetcode/tree/master/0078-subsets) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/namaws/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
@@ -129,6 +130,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 ## Matrix
 |  |
 | ------- |
+| [0054-spiral-matrix](https://github.com/namaws/leetcode/tree/master/0054-spiral-matrix) |
 | [0064-minimum-path-sum](https://github.com/namaws/leetcode/tree/master/0064-minimum-path-sum) |
 ## Two Pointers
 |  |
@@ -173,4 +175,8 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0737-sentence-similarity-ii](https://github.com/namaws/leetcode/tree/master/0737-sentence-similarity-ii) |
+## Simulation
+|  |
+| ------- |
+| [0054-spiral-matrix](https://github.com/namaws/leetcode/tree/master/0054-spiral-matrix) |
 <!---LeetCode Topics End-->
