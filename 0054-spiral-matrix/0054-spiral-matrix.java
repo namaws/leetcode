@@ -14,12 +14,15 @@ class Solution {
             endC--;
 
             if(startR <= endR) {
-            for(int c=endC; c>=startC; c--) 
-                list.add(matrix[endR][c]);}
+                for(int c=endC; c>=startC; c--) 
+                    list.add(matrix[endR][c]);
+            }
             endR--;
+
             if(startC <= endC) {
-            for(int r=endR; r>=startR; r--)
-                list.add(matrix[r][startC]);}
+                for(int r=endR; r>=startR; r--)
+                    list.add(matrix[r][startC]);
+            }
             startC++;
         }
         return list;
