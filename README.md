@@ -94,6 +94,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0141-linked-list-cycle](https://github.com/namaws/leetcode/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/namaws/leetcode/tree/master/0146-lru-cache) |
 | [0170-two-sum-iii-data-structure-design](https://github.com/namaws/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
+| [0383-ransom-note](https://github.com/namaws/leetcode/tree/master/0383-ransom-note) |
 | [0737-sentence-similarity-ii](https://github.com/namaws/leetcode/tree/master/0737-sentence-similarity-ii) |
 ## Linked List
 |  |
@@ -126,6 +127,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | ------- |
 | [0006-zigzag-conversion](https://github.com/namaws/leetcode/tree/master/0006-zigzag-conversion) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/namaws/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0383-ransom-note](https://github.com/namaws/leetcode/tree/master/0383-ransom-note) |
 | [0737-sentence-similarity-ii](https://github.com/namaws/leetcode/tree/master/0737-sentence-similarity-ii) |
 ## Matrix
 |  |
@@ -179,4 +181,8 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/namaws/leetcode/tree/master/0054-spiral-matrix) |
+## Counting
+|  |
+| ------- |
+| [0383-ransom-note](https://github.com/namaws/leetcode/tree/master/0383-ransom-note) |
 <!---LeetCode Topics End-->
