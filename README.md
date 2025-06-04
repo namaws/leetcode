@@ -15,6 +15,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/namaws/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0120-triangle](https://github.com/namaws/leetcode/tree/master/0120-triangle) |
 | [0128-longest-consecutive-sequence](https://github.com/namaws/leetcode/tree/master/0128-longest-consecutive-sequence) |
+| [0150-evaluate-reverse-polish-notation](https://github.com/namaws/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0170-two-sum-iii-data-structure-design](https://github.com/namaws/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0198-house-robber](https://github.com/namaws/leetcode/tree/master/0198-house-robber) |
 | [0228-summary-ranges](https://github.com/namaws/leetcode/tree/master/0228-summary-ranges) |
@@ -155,6 +156,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/namaws/leetcode/tree/master/0002-add-two-numbers) |
+| [0150-evaluate-reverse-polish-notation](https://github.com/namaws/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 ## Recursion
 |  |
 | ------- |
@@ -167,6 +169,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0020-valid-parentheses](https://github.com/namaws/leetcode/tree/master/0020-valid-parentheses) |
 | [0071-simplify-path](https://github.com/namaws/leetcode/tree/master/0071-simplify-path) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/namaws/leetcode/tree/master/0114-flatten-binary-tree-to-linked-list) |
+| [0150-evaluate-reverse-polish-notation](https://github.com/namaws/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/namaws/leetcode/tree/master/0155-min-stack) |
 | [0173-binary-search-tree-iterator](https://github.com/namaws/leetcode/tree/master/0173-binary-search-tree-iterator) |
 ## Divide and Conquer
