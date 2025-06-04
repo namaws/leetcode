@@ -132,6 +132,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0006-zigzag-conversion](https://github.com/namaws/leetcode/tree/master/0006-zigzag-conversion) |
+| [0020-valid-parentheses](https://github.com/namaws/leetcode/tree/master/0020-valid-parentheses) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/namaws/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0383-ransom-note](https://github.com/namaws/leetcode/tree/master/0383-ransom-note) |
 | [0737-sentence-similarity-ii](https://github.com/namaws/leetcode/tree/master/0737-sentence-similarity-ii) |
@@ -161,6 +162,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/namaws/leetcode/tree/master/0020-valid-parentheses) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/namaws/leetcode/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0173-binary-search-tree-iterator](https://github.com/namaws/leetcode/tree/master/0173-binary-search-tree-iterator) |
 ## Divide and Conquer
