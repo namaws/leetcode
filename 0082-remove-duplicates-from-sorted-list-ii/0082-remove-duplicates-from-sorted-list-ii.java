@@ -11,23 +11,23 @@
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
         ListNode dummy = new ListNode(0, head);
-        ListNode fast = head, slow = dummy;
+        ListNode curr = head, prev = dummy;
 
-        while(fast != null) {
-            while(fast.next != null && fast.val == fast.next.val) {
-                fast = fast.next;
+        while(curr != null) {
+            //find duplicate -> skip
+            while(curr.next != null && curr.val == curr.next.val) {
+                curr = curr.next;
             }
-
-            if(slow.next != fast) {
-                slow.next = fast.next;
-                fast = slow.next;
+            //if prev.next != curr, meaning there are duplicated nodes need to skip 
+            if(prev.next != curr) {
+                prev.next = curr.next;
+                curr = prev.next;
             }
-
             else {
-                slow = slow.next;
-                fast = fast.next;
+                prev = prev.next;
+                curr = curr.next;
             }
-        }
+        }   
         return dummy.next;
     }
 }
