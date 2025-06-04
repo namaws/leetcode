@@ -121,6 +121,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/namaws/leetcode/tree/master/0146-lru-cache) |
+| [0155-min-stack](https://github.com/namaws/leetcode/tree/master/0155-min-stack) |
 | [0170-two-sum-iii-data-structure-design](https://github.com/namaws/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0173-binary-search-tree-iterator](https://github.com/namaws/leetcode/tree/master/0173-binary-search-tree-iterator) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/namaws/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
@@ -166,6 +167,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0020-valid-parentheses](https://github.com/namaws/leetcode/tree/master/0020-valid-parentheses) |
 | [0071-simplify-path](https://github.com/namaws/leetcode/tree/master/0071-simplify-path) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/namaws/leetcode/tree/master/0114-flatten-binary-tree-to-linked-list) |
+| [0155-min-stack](https://github.com/namaws/leetcode/tree/master/0155-min-stack) |
 | [0173-binary-search-tree-iterator](https://github.com/namaws/leetcode/tree/master/0173-binary-search-tree-iterator) |
 ## Divide and Conquer
 |  |
