@@ -18,6 +18,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0170-two-sum-iii-data-structure-design](https://github.com/namaws/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0198-house-robber](https://github.com/namaws/leetcode/tree/master/0198-house-robber) |
 | [0228-summary-ranges](https://github.com/namaws/leetcode/tree/master/0228-summary-ranges) |
+| [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/namaws/leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0737-sentence-similarity-ii](https://github.com/namaws/leetcode/tree/master/0737-sentence-similarity-ii) |
 ## Dynamic Programming
 |  |
@@ -195,4 +196,9 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0056-merge-intervals](https://github.com/namaws/leetcode/tree/master/0056-merge-intervals) |
+| [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/namaws/leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
+## Greedy
+|  |
+| ------- |
+| [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/namaws/leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 <!---LeetCode Topics End-->
