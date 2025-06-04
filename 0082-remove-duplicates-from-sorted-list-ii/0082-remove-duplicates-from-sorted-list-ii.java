@@ -10,23 +10,19 @@
  */
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
-        ListNode dummy = new ListNode(-1, head);
-        ListNode fast = head;
-        ListNode slow = dummy;
+        ListNode dummy = new ListNode(0, head);
+        ListNode fast = head, slow = dummy;
 
         while(fast != null) {
-            //while loop for duplicate value 
             while(fast.next != null && fast.val == fast.next.val) {
                 fast = fast.next;
             }
-            
-            //remove duplicate
+
             if(slow.next != fast) {
                 slow.next = fast.next;
                 fast = slow.next;
             }
 
-            //no duplicate -> do normal step
             else {
                 slow = slow.next;
                 fast = fast.next;
