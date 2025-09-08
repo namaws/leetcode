@@ -7,6 +7,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 ## Array
 |  |
 | ------- |
+| [0027-remove-element](https://github.com/namaws/leetcode/tree/master/0027-remove-element) |
 | [0054-spiral-matrix](https://github.com/namaws/leetcode/tree/master/0054-spiral-matrix) |
 | [0056-merge-intervals](https://github.com/namaws/leetcode/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/namaws/leetcode/tree/master/0057-insert-interval) |
@@ -152,6 +153,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/namaws/leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
+| [0027-remove-element](https://github.com/namaws/leetcode/tree/master/0027-remove-element) |
 | [0061-rotate-list](https://github.com/namaws/leetcode/tree/master/0061-rotate-list) |
 | [0082-remove-duplicates-from-sorted-list-ii](https://github.com/namaws/leetcode/tree/master/0082-remove-duplicates-from-sorted-list-ii) |
 | [0088-merge-sorted-array](https://github.com/namaws/leetcode/tree/master/0088-merge-sorted-array) |
