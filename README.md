@@ -12,6 +12,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0057-insert-interval](https://github.com/namaws/leetcode/tree/master/0057-insert-interval) |
 | [0064-minimum-path-sum](https://github.com/namaws/leetcode/tree/master/0064-minimum-path-sum) |
 | [0078-subsets](https://github.com/namaws/leetcode/tree/master/0078-subsets) |
+| [0088-merge-sorted-array](https://github.com/namaws/leetcode/tree/master/0088-merge-sorted-array) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/namaws/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0120-triangle](https://github.com/namaws/leetcode/tree/master/0120-triangle) |
 | [0128-longest-consecutive-sequence](https://github.com/namaws/leetcode/tree/master/0128-longest-consecutive-sequence) |
@@ -153,6 +154,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0019-remove-nth-node-from-end-of-list](https://github.com/namaws/leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0061-rotate-list](https://github.com/namaws/leetcode/tree/master/0061-rotate-list) |
 | [0082-remove-duplicates-from-sorted-list-ii](https://github.com/namaws/leetcode/tree/master/0082-remove-duplicates-from-sorted-list-ii) |
+| [0088-merge-sorted-array](https://github.com/namaws/leetcode/tree/master/0088-merge-sorted-array) |
 | [0141-linked-list-cycle](https://github.com/namaws/leetcode/tree/master/0141-linked-list-cycle) |
 | [0170-two-sum-iii-data-structure-design](https://github.com/namaws/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
 ## Math
@@ -208,6 +210,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0056-merge-intervals](https://github.com/namaws/leetcode/tree/master/0056-merge-intervals) |
+| [0088-merge-sorted-array](https://github.com/namaws/leetcode/tree/master/0088-merge-sorted-array) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/namaws/leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 ## Greedy
 |  |
