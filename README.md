@@ -105,6 +105,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0141-linked-list-cycle](https://github.com/namaws/leetcode/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/namaws/leetcode/tree/master/0146-lru-cache) |
 | [0170-two-sum-iii-data-structure-design](https://github.com/namaws/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
+| [0205-isomorphic-strings](https://github.com/namaws/leetcode/tree/master/0205-isomorphic-strings) |
 | [0383-ransom-note](https://github.com/namaws/leetcode/tree/master/0383-ransom-note) |
 | [0737-sentence-similarity-ii](https://github.com/namaws/leetcode/tree/master/0737-sentence-similarity-ii) |
 ## Linked List
@@ -141,6 +142,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0017-letter-combinations-of-a-phone-number](https://github.com/namaws/leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0020-valid-parentheses](https://github.com/namaws/leetcode/tree/master/0020-valid-parentheses) |
 | [0071-simplify-path](https://github.com/namaws/leetcode/tree/master/0071-simplify-path) |
+| [0205-isomorphic-strings](https://github.com/namaws/leetcode/tree/master/0205-isomorphic-strings) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/namaws/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0383-ransom-note](https://github.com/namaws/leetcode/tree/master/0383-ransom-note) |
 | [0737-sentence-similarity-ii](https://github.com/namaws/leetcode/tree/master/0737-sentence-similarity-ii) |
