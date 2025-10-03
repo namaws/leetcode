@@ -21,6 +21,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0170-two-sum-iii-data-structure-design](https://github.com/namaws/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0198-house-robber](https://github.com/namaws/leetcode/tree/master/0198-house-robber) |
 | [0228-summary-ranges](https://github.com/namaws/leetcode/tree/master/0228-summary-ranges) |
+| [0380-insert-delete-getrandom-o1](https://github.com/namaws/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/namaws/leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0737-sentence-similarity-ii](https://github.com/namaws/leetcode/tree/master/0737-sentence-similarity-ii) |
 ## Dynamic Programming
@@ -106,6 +107,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0146-lru-cache](https://github.com/namaws/leetcode/tree/master/0146-lru-cache) |
 | [0170-two-sum-iii-data-structure-design](https://github.com/namaws/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0205-isomorphic-strings](https://github.com/namaws/leetcode/tree/master/0205-isomorphic-strings) |
+| [0380-insert-delete-getrandom-o1](https://github.com/namaws/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0383-ransom-note](https://github.com/namaws/leetcode/tree/master/0383-ransom-note) |
 | [0737-sentence-similarity-ii](https://github.com/namaws/leetcode/tree/master/0737-sentence-similarity-ii) |
 ## Linked List
@@ -131,6 +133,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0170-two-sum-iii-data-structure-design](https://github.com/namaws/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0173-binary-search-tree-iterator](https://github.com/namaws/leetcode/tree/master/0173-binary-search-tree-iterator) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/namaws/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0380-insert-delete-getrandom-o1](https://github.com/namaws/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -166,6 +169,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | ------- |
 | [0002-add-two-numbers](https://github.com/namaws/leetcode/tree/master/0002-add-two-numbers) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/namaws/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
+| [0380-insert-delete-getrandom-o1](https://github.com/namaws/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 ## Recursion
 |  |
 | ------- |
@@ -220,4 +224,8 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 |  |
 | ------- |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/namaws/leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
+## Randomized
+|  |
+| ------- |
+| [0380-insert-delete-getrandom-o1](https://github.com/namaws/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 <!---LeetCode Topics End-->
