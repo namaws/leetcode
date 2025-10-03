@@ -6,11 +6,11 @@ class Solution {
             prefix[i] = prefix[i-1]*nums[i-1];
         }
         int postfix = 1;
-        for(int i=nums.length-1; i>0; i--) {
+
+        for(int i = nums.length-2; i>=0; i--) {
+            postfix *= nums[i+1];
             prefix[i] *= postfix;
-            postfix *= nums[i];
         }
-        prefix[0] *= postfix;
         return prefix;
     }
 }
