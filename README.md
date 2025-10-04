@@ -17,6 +17,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/namaws/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0120-triangle](https://github.com/namaws/leetcode/tree/master/0120-triangle) |
 | [0128-longest-consecutive-sequence](https://github.com/namaws/leetcode/tree/master/0128-longest-consecutive-sequence) |
+| [0134-gas-station](https://github.com/namaws/leetcode/tree/master/0134-gas-station) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/namaws/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0170-two-sum-iii-data-structure-design](https://github.com/namaws/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0198-house-robber](https://github.com/namaws/leetcode/tree/master/0198-house-robber) |
@@ -224,6 +225,7 @@ Feel free to discuss about my solutions in every datastructure and algorithms qu
 ## Greedy
 |  |
 | ------- |
+| [0134-gas-station](https://github.com/namaws/leetcode/tree/master/0134-gas-station) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/namaws/leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 ## Randomized
 |  |
